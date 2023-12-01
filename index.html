@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
 </head>
 
@@ -120,19 +121,19 @@
     </header>
     <main>
         <section class="container">
-            <div class="row row-cols-lg-4 row-cols-md-6 row-cols-sm-12 row-cols-12 d-flex justify-content-evenly gy-5">
-                <div class="d-flex align-items-center justify-content-between py-2 w-25 rounded-3"
-                    style="background-color: orange;">
+            <div class="row d-flex justify-content-evenly g-2">
+                <div class="col-lg-4 d-flex align-items-center justify-content-between rounded-3 px-3" ;
+                    style="background-color:orange;width: 18rem;">
                     <h1 class="text-white">Watch</h1>
                     <img src="images/categories/watch.png" width="90" alt="">
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-between py-2 w-25 rounded-3"
-                    style="background-color: orchid;">
+                <div class="col-lg-4 d-flex align-items-center justify-content-between rounded-3" ;
+                    style="background-color: orchid;width: 18rem;">
                     <h1 class="text-white">Bags</h1>
                     <img src="images/categories/bag.png" width="90" alt="">
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-between py-2 w-25 rounded-3"
-                    style="background-color: blue;">
+                <div class="col-lg-4 d-flex align-items-center justify-content-between rounded-3" ;
+                    style="background-color:blue;width: 18rem;">
                     <h1 class="text-white">Shoe</h1>
                     <img src="images/categories/shoes.png" width="90" alt="">
                 </div>
@@ -225,8 +226,8 @@
                         <input type="password" id="inputPassword6" class="form-control"
                             aria-describedby="passwordHelpInline">
                     </div>
-                    <button type="submit" class="btn text-white px-3 my-3"
-                        style="background-color: rgb(255,56,134);">Submit</button>
+                    <button type="submit" onclick="document.getElementById('inputPassword6').value = ''"
+                        class="btn text-white px-3 my-3" style="background-color: rgb(255,56,134);">Submit</button>
                 </div>
             </div>
         </section>
